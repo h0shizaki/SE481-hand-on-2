@@ -1,0 +1,6 @@
+.idea
+*.pdf
+*.doc
+*.tmp
+__pycache__
+resource
