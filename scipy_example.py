@@ -15,7 +15,7 @@ B = S.todense()
 print(B)
 
 times = 10000
-timeit.timeit(lambda: dok_matrix(B), number=times) / times
-timeit.timeit(lambda: lil_matrix(B), number=times) / times
-timeit.timeit(lambda: csr_matrix(B), number=times) / times
-timeit.timeit(lambda: csc_matrix(B), number=times) / times
+print(timeit.timeit(lambda: dok_matrix(B), number=times) / times)
+print(timeit.timeit(lambda: lil_matrix(B), number=times) / times)
+print(timeit.timeit(lambda: csr_matrix(B), number=times) / times)
+print(timeit.timeit(lambda: csc_matrix(B), number=times) / times)
